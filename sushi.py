@@ -122,7 +122,7 @@ if __name__=="__main__":
     # Get price in bitcoins
     btc_value = get_btc_value_usd()
     if btc_value == None:
-        print "<error connecting to mtgox>"
+        print "<error fetching USD to BTC exchange rate>"
     else:
         print "Total: %.05f BTC" % (total_price / btc_value)
         print "   per person: %.05f BTC" % (per_person_price / btc_value)
